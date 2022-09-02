@@ -366,16 +366,17 @@ ul.email li img {
 /** banner_main **/
 
 .banner_main {
-     background: url(../images/banner1.jpg);
+     background: url(../images/banner1.jpeg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
-     height: 1034px;
+     /* height: 1034px; */
+     height: 600px;
      display: flex;
      justify-content: center;
      align-items: center;
-}
 
+}
 .carousel-indicators li {
      width: 20px;
      height: 20px;
@@ -383,6 +384,7 @@ ul.email li img {
      background-color: #fe9a0c;
      margin: 0px 4px;
      cursor: pointer;
+     
 }
 
 .carousel-indicators li.active {
@@ -390,9 +392,12 @@ ul.email li img {
 }
 
 .carousel-indicators {
+     display: flex;
+     align-items: center;
+     align-content: center;
      top: 122%;
-     margin-left: 5%;
-     right: inherit;
+     /* margin-left: 5%;
+     right: inherit; */
 }
 
 .banner_main {
