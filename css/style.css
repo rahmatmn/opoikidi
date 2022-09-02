@@ -251,6 +251,36 @@ header {
 
 /** menu section **/
 
+ul.hub_kami{
+     color: #fff;
+     text-align: right;
+     position: relative;
+     margin-top: -20px;
+     
+}
+
+ul.hub_kami li a{
+     color: #fff;
+     letter-spacing: 1px;
+     font-family: monospace;
+}
+
+ul.hub_kami li a:hover{
+     color: #FD990C;
+     border-bottom: 1px #fff solid;
+     border-width: 70%;
+}
+
+li span.hub_kami_head p{
+     font-size: 1.5em;
+     font-weight: bold;
+     color: #FD990C;
+}
+
+
+
+
+
 ul.email {
      padding-top: 4px;
      display: flex;
