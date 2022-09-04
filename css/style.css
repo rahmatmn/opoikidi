@@ -242,10 +242,12 @@ button {
 /*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
 
 header {
-     height: 105px;
+     z-index: 3;
+     position: fixed;
+     height: 90px;
      background: #8b1310;
      width: 100%;
-     padding: 33px 30px;
+     padding: 26px 30px;
 }
 
 
@@ -276,10 +278,6 @@ li span.hub_kami_head p{
      font-weight: bold;
      color: #FD990C;
 }
-
-
-
-
 
 ul.email {
      padding-top: 4px;
@@ -329,7 +327,7 @@ ul.email li img {
      height: 100%;
      top: 0;
      left: 0;
-     background-color: #111;
+     background-color: #8B1310;
      overflow-x: hidden;
      transition: 0.5s;
      padding-top: 60px;
@@ -366,38 +364,16 @@ ul.email li img {
 /** banner_main **/
 
 .banner_main {
-     background: url(../images/banner1.jpeg);
+     /* background: #fff; */
+     /* background: #8b1310; */
+     background: url(../images/banner1.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
-     /* height: 1034px; */
-     height: 600px;
+     height: 100vh;
      display: flex;
      justify-content: center;
      align-items: center;
-
-}
-.carousel-indicators li {
-     width: 20px;
-     height: 20px;
-     border-radius: 11px;
-     background-color: #fe9a0c;
-     margin: 0px 4px;
-     cursor: pointer;
-     
-}
-
-.carousel-indicators li.active {
-     background-color: #fff;
-}
-
-.carousel-indicators {
-     display: flex;
-     align-items: center;
-     align-content: center;
-     top: 122%;
-     /* margin-left: 5%;
-     right: inherit; */
 }
 
 .banner_main {
@@ -411,12 +387,13 @@ ul.email li img {
 }
 
 .bg_white {
-     background: #fffffff0;
-     padding: 45px 20px 50px 20px;
+     background: transparent;
+     padding: 45px 20px 20px 20px;
+     text-align: left;
 }
 
 .banner_main .bg_white h1 {
-     color: #141111;
+     color: #8B1310;
      font-size: 70px;
      line-height: 84px;
      font-weight: 700;
@@ -432,12 +409,13 @@ ul.email li img {
 
 .banner_main .ban_btn {
      display: block;
-     background: #fff;
-     color: #000;
-     font-size: 17px;
+     background: #FE9A0C;
+     color: #8B1310;
+     font-size: 16px;
      font-weight: 500;
      margin: 0 auto;
-     margin-top: 55px;
+     margin-top: 30px;
+     border-radius: 25px;
 }
 
 .ban_btn .carousel-control-next-icon,
@@ -445,6 +423,19 @@ ul.email li img {
      display: none;
 }
 
+/** Layanan **/
+.layanan{
+     height: 100vh;
+     margin-top: 37px;
+}
+
+.isi_layanan h2 {
+     color: #8B1310;
+     font-size: 40px;
+     line-height: 84px;
+     font-weight: 700;
+     padding-bottom: 22px;
+}
 
 /** about **/
 
@@ -535,10 +526,10 @@ ul.email li img {
      background: #8b1310;
      color: #fff;
      max-width: 224px;
-     height: 61px;
+     height: 55px;
      padding: 14px 0px;
      width: 100%;
-     font-size: 17px;
+     font-size: 16px;
      text-align: center;
      font-weight: 500;
      transition: ease-in all 0.5s;
@@ -772,7 +763,7 @@ ul.email li img {
 
 .instant_img {
      margin-top: -30px;
-     z-index: 9999;
+     z-index: 2;
      position: relative;
 }
 
