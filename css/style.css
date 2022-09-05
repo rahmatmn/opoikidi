@@ -208,9 +208,9 @@ button {
      flex-wrap: wrap;
 }
 
-.container {
+/* .container {
      max-width: 1170px;
-}
+} */
 
 
 /*---------------------------- preloader area ----------------------------*/
@@ -370,7 +370,7 @@ ul.email li img {
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
-     height: 100vh;
+     min-height: 100vh;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -425,8 +425,10 @@ ul.email li img {
 
 /** Layanan **/
 .layanan{
-     height: 100vh;
-     margin-top: 37px;
+     margin: 0 40px 0 40px;
+     height: 100%;
+     display: grid;
+     place-items: center center;
 }
 
 .isi_layanan h2 {
@@ -437,11 +439,90 @@ ul.email li img {
      padding-bottom: 22px;
 }
 
+.cards{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+     padding: 20px;
+     grid-gap: 40px;
+}
+
+.card{
+     background-color: #FBF7F5;
+     border-radius: 20px;
+     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.card .container{
+     position: relative;
+     clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+
+.card img{
+     width: 100%;
+     display: block;
+     border-radius: 20px 20px 0 0;
+}
+
+.card .container:after{
+     content: "";
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     border-radius: 20px 20px 0 0;
+     opacity: 0.5;
+}
+
+.card1>.container:after{
+     background-image: linear-gradient(
+          135deg,
+          #F02262,
+          #FFEB70
+     );
+}
+
+.card2>.container:after{
+     background-image: linear-gradient(
+          135deg,
+          #F02262,
+          #FFEB70
+     );
+}
+
+.card3>.container:after{
+     background-image: linear-gradient(
+          135deg,
+          #F02262,
+          #FFEB70
+     );
+}
+
+.details{
+     padding: 20px 10px;
+}
+
+.details>h3{
+     color: #8B1310;
+     font-weight: 700;
+     font-size: 18px;
+     margin: 10px 0 15px 0;
+}
+
+.details>p{
+     color: #000000;
+     font-size: 15px;
+     line-height: 30px;
+     font-weight: 400;
+}
+
+
 /** about **/
 
 .top_layer {
      position: relative;
 }
+
 
 
 /* .top_layer::before {
