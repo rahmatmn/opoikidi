@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
@@ -515,6 +517,39 @@ ul.email li img {
      line-height: 30px;
      font-weight: 400;
 }
+
+/** Mitra Kami **/
+.mitra_kami{
+     width: 100%;
+     margin: 40px 0 40px 0;
+     height: 100%;
+     padding: 40px 0 40px 0;
+}
+
+.mitra_kami_head{
+     position: relative;
+     display: flex;
+     align-items: center;
+     margin-right: -99px;
+}
+
+.mitra_kami_head h3{
+     letter-spacing: 2px;
+     font-size: 40px;
+     font-weight: 700;
+     color: #8B1310;
+}
+
+.mitra_kami_content{
+     width: 100%;
+     background-color: #8b1210;
+     
+}
+
+.mitra_kami_content img{
+     margin: 10px;
+}
+
 
 
 /** about **/
