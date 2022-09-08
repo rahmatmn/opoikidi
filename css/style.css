@@ -446,6 +446,7 @@ ul.email li img {
      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
      padding: 20px;
      grid-gap: 40px;
+     cursor: pointer;
 }
 
 .card{
@@ -524,6 +525,47 @@ ul.email li img {
      margin: 40px 0 40px 0;
      height: 100%;
      padding: 40px 0 40px 0;
+     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+     border-radius: 20px;
+     cursor: pointer;
+     position: relative;
+     /* background: hsl(0, -3%, 14%); */
+     background-color: #ffffff;
+}
+
+.mitra_kami::after{
+     position: absolute;
+     content: "";
+     top: 15px;
+     left: 0;
+     right: 0;
+     z-index: -1;
+     height: 100%;
+     width: 100%;
+     transform: scale(0.9) translateZ(0);
+     filter: blur(15px);
+     background: linear-gradient(to left,
+          #ff5770,
+          #e4428d,
+          #c42da8,
+          #9e16c3,
+          #c42da8,
+          #e4428d,
+          #ff5770);
+     /* background: linear-gradient(to left,
+          #F02262,
+          #FFEB70 */
+     background-size: 200% 200%;
+     animation: glow 1.25s linear infinite;
+}
+
+@keyframes glow{
+     0%{
+          background-position: 0% 50%;
+     }
+     100%{
+          background-position: 200% 50%;
+     }
 }
 
 .mitra_kami_head{
@@ -542,8 +584,6 @@ ul.email li img {
 
 .mitra_kami_content{
      width: 100%;
-     background-color: #8b1210;
-     
 }
 
 .mitra_kami_content img{
@@ -557,26 +597,12 @@ ul.email li img {
 .top_layer {
      position: relative;
 }
-
-
-
-/* .top_layer::before {
-     position: absolute;
-     width: 100%;
-     height: 260px;
-     content: "";
-     background: url(../images/croos.png);
-     background-size: 100% 100%;
-     background-position: center center;
-     background-repeat: no-repeat;
-     top: -257px;
-}*/
-
 .about {
-     padding-top: 10px;
+     padding-top: 20px;
 }
 
 .about .titlepage p {
+     font-size: 12px;
      line-height: 24px;
      padding-top: 19px;
      color: #000;
@@ -593,8 +619,7 @@ ul.email li img {
 }
 
 .about_box_text h3 {
-     font-size: 27px;
-     text-transform: uppercase;
+     font-size: 24px;
      font-weight: 700;
      color: #0b0d0a;
      line-height: 30px;
@@ -602,7 +627,7 @@ ul.email li img {
 }
 
 .about_box_text p {
-     font-size: 20px;
+     font-size: 15px;
      line-height: 32px;
      color: #0b0d0a;
      font-weight: 400;
@@ -622,20 +647,39 @@ ul.email li img {
      width: 100%;
 }
 
-
-/** end about **/
+.container-portofolio{
+     margin: 20px auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     /* justify-content: space-evenly; */
+     box-shadow: 4px 0 27px rgba(02, 3, 8, 0.20);
+ }
+ 
+ .thumbnail{
+     width: 30%;
+     margin: 15px;
+ }
+ 
+ .container-portofolio .thumbnail img{
+     width: 100%;
+ }
 
 .titlepage {
-     padding-bottom: 60px;
+     padding-bottom: 40px;
+     text-align: center;
 }
 
 .titlepage h2 {
+     letter-spacing: 2px;
      font-size: 40px;
      font-weight: 700;
+     color: #8B1310;
+     font-weight: 700;
      line-height: 46px;
-     color: #251d12;
-     text-transform: uppercase;
 }
+
+/** end about **/
 
 .read_more {
      display: block;
